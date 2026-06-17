@@ -16,7 +16,7 @@ This project is designed so you never need to pay for infrastructure:
 | **APIs** | $0 | No external calls; no API keys to manage |
 | **Hosting (optional)** | $0 | Static files only — GitHub Pages, Vercel, or Netlify free tiers |
 
-**Recommended for lowest cost:** use it locally during your job search. Deploy to GitHub Pages only if you want it in your portfolio — still free.
+**Recommended for lowest cost:** use it locally during your job search. Add to your Netlify portfolio when you want it visible — still free on the hobby tier.
 
 ## Privacy model
 
@@ -44,13 +44,13 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Deploy to your portfolio (recommended)
 
-This app is designed to live as a **subdirectory** on an existing GitHub Pages site (e.g. `yoursite.github.io/pipeline/`). That keeps your one free Pages site and avoids loading the app until someone clicks the link.
+This app lives as a **subdirectory** on [keanucodes.netlify.app](https://keanucodes.netlify.app/pipeline/) (`/pipeline/`). That keeps your main portfolio fast — Pipeline JS loads only when someone visits the link.
 
 ```bash
 npm run build:portfolio
 ```
 
-This builds with `base: /pipeline/`, splits vendor chunks for caching, and copies `dist/` into `../keanu-sida.github.io/pipeline/`. Commit and push the portfolio repo to publish.
+This builds with `base: /pipeline/`, splits vendor chunks for caching, and copies `dist/` into `../Keanus-Portfolio/static/pipeline/`. Commit and push [Keanus-Portfolio](https://github.com/keanu-sida/Keanus-Portfolio) to publish via Netlify.
 
 To point at a different portfolio path, edit `.env.portfolio` and `scripts/copy-to-portfolio.mjs`.
 

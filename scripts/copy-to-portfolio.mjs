@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
-const target = resolve(root, '..', 'keanu-sida.github.io', 'pipeline')
+const target = resolve(root, '..', 'Keanus-Portfolio', 'static', 'pipeline')
 
 rmSync(target, { recursive: true, force: true })
 mkdirSync(target, { recursive: true })

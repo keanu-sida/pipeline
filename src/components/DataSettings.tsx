@@ -62,8 +62,8 @@ export function DataSettings({ onImportComplete }: Props) {
             <p className="mt-1 text-sm text-emerald-800/80">
               No database, no auth service, no API keys. Data lives in your browser for free.
               Run locally with <code className="rounded bg-emerald-100 px-1">npm run dev</code> and
-              you never pay anything. If you deploy as a static site on GitHub Pages, Vercel, or
-              Netlify free tiers, hosting stays $0 too.
+              you never pay anything. On your Netlify portfolio it lives at <code className="rounded bg-emerald-100 px-1">/pipeline/</code> and
+              only loads when someone visits that page.
             </p>
           </div>
         </div>
